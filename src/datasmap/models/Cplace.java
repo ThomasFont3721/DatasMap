@@ -56,6 +56,15 @@ public class Cplace {
 	public void setLatitude(Double latitude) {this.latitude = latitude;}
 	public Double getLongitude() {return longitude;}
 	public void setLongitude(Double longitude) {this.longitude = longitude;}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof Cplace)) {
+			return false;
+		}
+		Cplace pCplace =(Cplace) obj;
+		return pCplace.getAdress().equals(this.getAdress());
+	}
 	
 	
 }

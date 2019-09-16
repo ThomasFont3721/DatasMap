@@ -1,14 +1,13 @@
 package datasmap.models;
 
 import java.time.LocalDate;
-import java.util.List;
 
 public class Cevent {
 	private String name;
 	private String description;
 	private LocalDate date;
 	private String groupes;
-	private List<Ctype> types;
+	private Ctype types;
 	
 	public Cevent(String name, String description, LocalDate date, String groupes) {
 		super();
@@ -25,8 +24,8 @@ public class Cevent {
 	public String getDescription() {return description;}
 	public void setDescription(String description) {this.description = description;}
 	public LocalDate getDate() {return date;}
-	public List<Ctype> getTypes() {return types;}
-	public void setTypes(List<Ctype> types) {this.types = types;}
+	public Ctype getTypes() {return types;}
+	public void setTypes(Ctype types) {this.types = types;}
 	
 	
 }
