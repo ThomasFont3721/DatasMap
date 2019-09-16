@@ -15,7 +15,7 @@ public class Csite{
 		this(name, description, Capplication.instance.getPlaceByAdress(address));
 	}
 	
-	public Csite(String name, String description, Double latitude, Double longitude) {
+	public Csite(String name, String description, double latitude, double longitude) {
 		this(name, description, Capplication.instance.getPlaceByGps(latitude, longitude));
 	}
 

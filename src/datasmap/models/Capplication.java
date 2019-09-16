@@ -21,9 +21,9 @@ public class Capplication {
 		return null;
 	}
 	
-	public Cplace getPlaceByGps(Double latitude, Double longitude) {
+	public Cplace getPlaceByGps(double latitude, double longitude) {
 		for (Cplace place : instance.places) {
-			if (place.getLatitude().equals(latitude) && place.getLongitude().equals(longitude)) {
+			if (place.getLatitude() == latitude && place.getLongitude() == longitude) {
 				return place;
 			}
 		}
